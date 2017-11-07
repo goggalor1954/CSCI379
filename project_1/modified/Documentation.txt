@@ -1,0 +1,31 @@
+# James Roesemann
+# CSCI379
+# Project 1
+# Doucmuntation
+#
+# The programs TCP_client.py and TCP_server.py use the TCP protocol to send and recive messages.
+# They both use the port number 9999 to transmit messages.
+# 
+# the program TCP_server must be running before TCP client in order to operate.
+
+# the default hostname of the TCP_server is the loopback address. 
+# If an argument is passed to TCP_client the value of the first argument will be TCP_server hostname.
+# if an invalid or unreachable ip address is passed as an argument TCP_client will not run.  
+# The user of TCP_client enters a sentance to be modified. TCP client transmits this sentance in the form of a string to TCP_server on port 9999. 
+# The user of TCP_client entered a command to modify the sentance. TCP_client transmits this command in the form of a string to TCP_server on port 9999.
+# 
+# TCP_server recives a sentance in the form of a string and an command from TCP_client in the form of a string.
+# if the command value is valid the sentance is modified based on the value.
+# If the command value is invalid a message stating so replaces the sentance.
+#
+# the valid commands are listed as follows:
+# Upper: changes all letters in the string to upper case.
+# Lower: changes all letters in the string to lower case.
+# Swap: Change all the upper case letters to lower case letters and change all the lower case letters to uppercase letters.
+# Rev: reverse the order of the words in the string.
+# Cap: capitlize the first letter of the string. change all other letters to lower case.
+# KILL: Kills the process running on the server. Returns a message confirming this.
+#
+# TCP_server transmits the modified sentance back to TCP_client using port 9999.
+# In most cases TCP_server stays online and waits for the process to repeat.
+# If the KILL command was recived, then the socket closes and the program terminates.
