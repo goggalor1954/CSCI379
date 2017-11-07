@@ -1,0 +1,15 @@
+# James Roesemann
+# CSCI379
+# project 1
+# Discussion questions.
+
+#How would TCP or UDP affect you application? Why did I pick TCP over UDP?
+
+
+
+# It the protocal statefull or stateless? How would the other type of design affect your application?
+
+
+
+#Is the server program able to comunicate with mutiple clients at the same time?
+The server was able to comunicate with mutiple clents from dirrent machines while running on it's own machine. I was not able to time it 
